@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'Dancing Script';
+    src: url(fuentes/DancingScript-Regular.otf);
+}
+body {
+    font-family: 'Dancing Script', cursive;
+    background-color: #02010a;
+    margin: 0;
+    padding: 0;
+}
+#contenido{
+    align-content: center;
+    max-width: 900px;
+}
+
+header h1{
+    text-align: left;
+    text-shadow: 2px 2px 2px #02010a;
+    font-size: 30px;
+    background-color: #5b7989;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: white;
+    margin: 0;
+    padding: 25px;
+    padding-bottom: 40px;
+    animation: Slidein 2s;
+}
+
+@keyframes Slidein{
+    0%{
+        margin-top: 150%;
+    }
+    60%{
+        margin-top: -5%;
+    }
+    100%{
+        margin-top: 0%;
+    }
+
+}
+
+.link{
+    color: white;
+}
+.nav{
+    float: right;
+}
+
+.nav-menu {
+    font-size: 19px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: 80px;
+}
+  
+.nav-menu li {
+    float: left;
+    text-align: center;
+}
+.nav-menu li a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    
+}
+
+.contenedor{
+    background-color: #d5c75f;
+}
+
+.galeria{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeria img{
+    width: 30%;
+    height: 250px;
+    margin: 15px;
+    flex: auto;
+    
+}
+
+.item1{
+    order: 1;
+    filter: blur(10px);
+    width: 100%;
+    height: auto; 
+    max-height: 400px;
+    max-width: 400px;
+}
+
+.item2{
+    order: 2;
+    filter: grayscale(100%);
+    width: 100%;
+    height: auto; 
+    max-height: 400px;
+    max-width: 400px;
+}
+
+.item3{
+    order: 3;
+    filter: sepia(90%);
+    width: 100%;
+    height: auto; 
+    max-height: 400px;
+    max-width: 400px;
+}
+
+.item4{
+    order: 4;
+    filter: grayscale(100%);
+    width: 100%;
+    height: auto; 
+    max-height: 400px;
+    max-width: 400px;;
+}
+
+.item5{
+    order: 5;
+    width: 100%;
+    height: auto; 
+    max-height: 400px;
+    max-width: 400px;
+}
+
+.item6{
+    order: 6;
+    filter: grayscale(100%);
+    width: 100%;
+    height: auto; 
+    max-height: 400px;
+    max-width: 400px;
+}
+
+.footer{
+    margin: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding-bottom: 50px;
+    background-color: #c6d5c5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.item{
+    flex: 1;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 auto;
+    padding: 1em;
+    padding-inline-start: 130px;
+    padding-left: 2.5em;
+    padding-bottom: 3.5em;
+}
+.datos{
+    font-weight: bold;
+    font-size: 12px;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    right: 140px;
+}
+@media (max-width:900px){
+    header h1{
+        max-width: 900px;
+        font-size: 39px;
+        text-align: center;
+    }
+    
+    .container{
+        flex-direction: column;
+        align-content: center;
+
+    }
+    
+    .nav-menu{
+        font-size: 19px;
+        position: relative;
+        right: 125px;
+        bottom: 35px;
+    }
+
+    .galeria{
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    .galeria img{
+        width: 100%;
+    }
+
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .item{
+        font-size: 30px;
+        justify-content: center;
+        align-content: center;
+        padding: 30px;
+        padding-right: 70px;
+    }
+
+    .datos{
+        font-size: 20px;
+        justify-content: center;
+        align-content: center;
+        padding-left: 13em;
+        position: relative;
+        top: -10px;
+    }
+
+}
+ 
